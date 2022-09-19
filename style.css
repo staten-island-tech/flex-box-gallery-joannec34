@@ -5,13 +5,13 @@ body {
     text-align: center;
 }
 
-.boxes {
+.mommy {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.miniboxes {
+.baby {
     background-color: #46646f;
     padding: 20px 50px;
     padding-bottom: 100px;
