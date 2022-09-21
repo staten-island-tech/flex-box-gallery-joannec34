@@ -1,35 +1,26 @@
-html, 
-body, 
+html,
+body,
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-size: 62.5%; /* normally 100% is 16px, we want the size to be 10px so we do 62.5% */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* normally 100% is 16px, we want the size to be 10px so we do 62.5% */
 }
 
 body {
-    background-color: rgb(48, 68, 79);
-    color: #f8edeb;
+    background-color: blueviolet;
+    color: white;
     font-size: 20px;
     text-align: center;
 }
 
 .parent {
-    font-size: 10px;
+    font-size: 30px;
     display: flex;
-    width: 80vw;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .baby {
-    background-color: #46646f;
-    font-size: 1rem;
-    padding: 20px;
-    flex-grow: 1;
-    flex-basis: 0%;
-    margin: 20px;
-    border-radius: 10px;
-    position: relative;
+    width: 50px;
 }
