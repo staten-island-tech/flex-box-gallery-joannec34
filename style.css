@@ -6,19 +6,41 @@ body,
     box-sizing: border-box;
     font-size: 62.5%;
     /* normally 100% is 16px, we want the size to be 10px so we do 62.5% */
+
+    color: black;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
 }
 
-body {
-    background-color: blueviolet;
-    color: black;
-    font-size: 20px;
-    text-align: center;
+h1 {
+    font-family: 'Dangrek', cursive;
+    font-style: italic;
+    font-size: 4vw;
+    margin-bottom: -2%;
+}
+
+h2 {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
 }
 
 .header {
-    font-size: 500%;
-    background-color: aqua;
+    background-image: url(https://static.myfigurecollection.net/upload/pictures/2020/01/10/2364321.png);
+    height: auto;
     padding: 2%;
+}
+
+.title {
+    font-size: 500%;
+    padding: 40px;
+    background-color: aliceblue;
+    align-content: center;
+    border-radius: 100%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 10%;
 }
 
 .parent {
@@ -26,17 +48,31 @@ body {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    margin: 5%;
+    margin: 2%;
+}
+
+img {
+    width: 20em;
+    height: auto;
+    margin: 4%;
+}
+
+h3 {
+    font-family: 'Dangrek', cursive;
+    font-size: 2em;
+}
+
+.bio {
+    font-size: 20px;
+    margin: 0 2em;
 }
 
 .baby {
-    background-color: aliceblue;
-    border: 5px solid brown;
-    border-radius: 5%;
+    background-color: white;
+    border: 20px solid beige;
+    border-radius: 10%;
     min-width: 25%;
-    max-width: 100%;
     width: 500px;
     height: 500px;
-    margin: 1%;
-    
+    margin: 1.5%;
 }
