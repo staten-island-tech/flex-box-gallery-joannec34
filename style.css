@@ -33,7 +33,7 @@ h2 {
     padding: 2%;
 }
 
-.title {
+#title {
     font-size: 500%;
     padding: 40px;
     background-color: white;
@@ -45,6 +45,7 @@ h2 {
     margin: auto;
     position: relative;
     top: 10%;
+    box-shadow: 0px 0px 10px #7e634d;
 }
 
 .parent {
@@ -80,4 +81,5 @@ h3 {
     width: 500px;
     height: 500px;
     margin: 1.5%;
+    box-shadow: 0px 0px 10px #7e634d;
 }
