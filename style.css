@@ -31,6 +31,11 @@ h2 {
     background-image: url(https://www.san-x.co.jp/charapri/images/kabe/sumi/42_1080_1920.png);
     height: auto;
     padding: 2%;
+    transition: 0.4s;
+}
+
+.header:hover {
+    transform: scale(1.1);
 }
 
 #title {
@@ -82,4 +87,34 @@ h3 {
     height: 500px;
     margin: 1.5%;
     box-shadow: 0px 0px 10px #7e634d;
+    transition: 0.4s;
+}
+
+.baby:hover {
+    transform: scale(1.1);
+}
+
+.animation {
+    animation: move 1s infinite;
+    position: relative;
+}
+
+@keyframes move {
+    0% {
+        left: 0.5%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    50% {
+        right: 0.5%;
+    }
+
+    75 {}
+
+    100% {
+        right: 0%;
+    }
 }
