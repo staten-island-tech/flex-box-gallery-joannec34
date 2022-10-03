@@ -61,7 +61,7 @@ h2 {
     margin: 2%;
 }
 
-img {
+.image {
     width: 20em;
     height: auto;
     margin: 4%;
@@ -94,27 +94,29 @@ h3 {
     transform: scale(1.1);
 }
 
-.animation {
-    animation: move 1s infinite;
+.image:hover {
+    animation: move 4s infinite;
     position: relative;
 }
 
 @keyframes move {
     0% {
-        left: 0.5%;
+        transform: scale(1);
     }
 
     25% {
-        left: 0%;
+        transform: scale(1.05);
     }
 
     50% {
-        right: 0.5%;
+        transform: scale(1);
     }
 
-    75 {}
+    75% {
+        transform: scale(1.05)
+    }
 
     100% {
-        right: 0%;
+        transform: scale(1);
     }
 }
