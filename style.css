@@ -120,3 +120,23 @@ h3 {
         transform: scale(1);
     }
 }
+
+.dust {
+    width: 300px;
+    transition: 4s;
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {}
+
+    25% {}
+
+    50% {}
+
+    75% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
