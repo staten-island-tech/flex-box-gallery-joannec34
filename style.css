@@ -34,11 +34,7 @@ h2 {
     text-align: center;
 }
 
-.header:hover {
-    transform: scale(1.1);
-}
-
-#title {
+.title {
     font-size: 500%;
     padding: 40px;
     background-color: white;
@@ -51,6 +47,11 @@ h2 {
     position: relative;
     top: 10%;
     box-shadow: 0px 0px 10px #7e634d;
+    transition: 0.4s;
+}
+
+.title:hover {
+    animation: enlarge 4s infinite;
 }
 
 .parent {
@@ -58,7 +59,7 @@ h2 {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    margin: 2%;
+    margin: 4%;
     text-align: center;
 }
 
@@ -73,6 +74,17 @@ h3 {
     font-size: 2em;
 }
 
+.topbio {
+font-size: 20px;
+text-align: center;
+margin: 2%;
+padding: 4%;
+background-color: white;
+    border: 15px solid #f1e6c6;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #7e634d;
+}
+
 .bio {
     font-size: 20px;
     margin: 0 2em;
@@ -84,9 +96,9 @@ h3 {
     border-radius: 10%;
     min-width: 20%;
     max-width: 100%;
-    width: 500px;
+    width: 450px;
     height: 500px;
-    margin: 1.5%;
+    margin: 2%;
     box-shadow: 0px 0px 10px #7e634d;
     transition: 0.4s;
 }
@@ -116,7 +128,7 @@ h3 {
 
 .dust {
     width: 300px;
-    animation: spinny 4s linear infinite, move 10s linear infinite;
+    animation: 4s linear infinite spinny, 5s ease-in-out infinite alternate move;
     transition: 4s;
     position: relative;
     text-align: left;
@@ -129,16 +141,12 @@ h3 {
 }
 
 @keyframes move {
-   0% {
-    left: 0%;
-   }
-
-    50% {
-        left: 80%;
+    0% {
+        left: 0%;
     }
 
     100% {
-        left: 0%;
+        left: 70%;
     }
 }
 
@@ -150,4 +158,3 @@ h3 {
     .baby {
     width: 100%;
     }
-}
