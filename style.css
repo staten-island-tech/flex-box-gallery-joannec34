@@ -51,7 +51,21 @@ h2 {
 }
 
 .title:hover {
-    animation: enlarge 4s infinite;
+    animation: 4s infinite enlarge;
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .parent {
@@ -96,22 +110,7 @@ h3 {
 }
 
 .image:hover {
-    animation: enlarge 2s infinite;
-    position: relative;
-}
-
-@keyframes enlarge {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    transform: scaleX(-1);
 }
 
 .hokori {
@@ -142,12 +141,3 @@ h3 {
         left: 20%;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .parent {
-        flex-direction: column;
-    }
-
-    .baby {
-        width: 100%;
-    }
