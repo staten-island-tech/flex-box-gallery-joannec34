@@ -200,13 +200,3 @@ transition: 0.2s;
         width: 100%;
     }
 }
-
-@media screen and (max-width: 1920px) {
-    .parent {
-        flex-direction: column;
-    }
-
-    .baby {
-        width: 100%;
-    }
-}
