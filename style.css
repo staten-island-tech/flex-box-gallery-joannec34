@@ -29,7 +29,8 @@ h2 {
     transition: 0.2s;
 }
 
-h1:hover,h2:hover {
+h1:hover,
+h2:hover {
     color: palevioletred;
 }
 
@@ -49,7 +50,7 @@ h1:hover,h2:hover {
     padding: 40px;
     background-color: white;
     align-content: center;
-    border: 15px solid #f1e6c6;
+    border: 0.8em solid #f1e6c6;
     border-radius: 100%;
     width: 50%;
     height: auto;
@@ -57,26 +58,31 @@ h1:hover,h2:hover {
     position: relative;
     top: 10%;
     box-shadow: 0px 0px 10px #7e634d;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 .titleblock:hover {
     animation: 4s linear infinite bobble;
+    border: 0.8em solid #ffd4d4;
 }
 
 @keyframes bobble {
     0% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     25% {
-    transform: rotate(2deg);
+        transform: rotate(2deg);
     }
+
     50% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     75% {
-    transform: rotate(-2deg);
+        transform: rotate(-2deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -92,7 +98,7 @@ h1:hover,h2:hover {
 
 .baby {
     background-color: white;
-    border: 15px solid #f1e6c6;
+    border: 0.8em solid #f1e6c6;
     border-radius: 10%;
     min-width: 20%;
     max-width: 100%;
@@ -100,12 +106,13 @@ h1:hover,h2:hover {
     height: 500px;
     margin: 2%;
     box-shadow: 0px 0px 10px #7e634d;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 .baby:hover {
     transform: scale(1.1);
     box-shadow: 4px 4px 10px #7e634d;
+    border: 0.8em solid #ffd4d4;
 }
 
 img {
@@ -129,7 +136,7 @@ h3:hover {
 }
 
 p {
-    font-size: 20px;
+    font-size: 100%;
     margin: 0 2em;
     transition: 0.2s;
 }
@@ -149,9 +156,9 @@ h4 {
 }
 
 #hokoriword {
-font-size: 100%;
-font-weight: bold;
-transition: 0.2s;
+    font-size: 100%;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
 #hokoriword:hover {
@@ -176,18 +183,45 @@ transition: 0.2s;
     0% {
         left: -20%;
     }
+
     100% {
         left: 20%;
     }
 }
 
 @media screen and (max-width: 390px) {
+
+    .titleblock {
+        align-content: center;
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        line-height: 35px;
+    }
+
+    h2 {
+        font-size: 70%;
+    }
+
     .parent {
         flex-direction: column;
+        align-items: center;
+        font-size: 400%;
     }
 
     .baby {
-        width: 100%;
+        min-width: 10%;
+        max-width: 80%;
+        height: 350px;
+        margin: 5% 0% 5% 0%;
+    }
+
+    p {
+        font-size: 80%;
     }
 }
 
@@ -199,4 +233,5 @@ transition: 0.2s;
     .baby {
         width: 100%;
     }
+
 }
