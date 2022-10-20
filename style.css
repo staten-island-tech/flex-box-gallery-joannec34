@@ -156,7 +156,6 @@ h4 {
     margin: 4% 10% 2% 10%;
 }
 
-<<<<<<< Updated upstream
 #hokoriword {
     font-size: 100%;
     font-weight: bold;
@@ -165,12 +164,6 @@ h4 {
 
 #hokoriword:hover {
     color: palevioletred;
-=======
-#hokoritext {
-    font-size: 100%;
-    font-weight: bold;
-    transition: 0.2s;
->>>>>>> Stashed changes
 }
 
 .hokori {
